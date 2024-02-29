@@ -1,0 +1,101 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+
+
+@media screen and (max-width: 375px){
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+       max-width: 375px;
+       height: auto;
+       margin: 0 auto; /* Change this */
+       padding: unset;
+       box-sizing: content-box;
+    }
+    
+    body{
+        margin : 0;
+        padding: 0;
+       
+    }
+}
+:root{
+    --primary-Nutmeg: hsl(14,45%,36%);
+    --primary-DakRaspberry:hsl(332,51%,32%);
+    --neutral-White: hsl(0,0%,100%);
+    --neutral-Rosewhite: hsl(330,100%,98%);
+    --neutral-Eggshell: hsl(30,54%,90%);
+    --neutral-LightGrey: hsl(30,18%,87%);
+    --neutral-WengeBrown: hsl(30,10%,34%);
+    --neutral-DarkCharcoal: hsl(24,5%,18%);
+    --Heading-Font: 'Young Serif', serif;
+    --Heading-Weight: 400;
+    --Content:'Outfit', sans-serif;
+    --Content-Weight-1: 400;
+    --Content-Weight-2: 700;
+    --Content-font-size: 20px;
+}
+*{
+    font-family: var(--Content);
+    font-size : var(--Content-font-size);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--neutral-Eggshell); 
+} 
+h1{
+    color: var(--neutral-DarkCharcoal);
+    font-family: 'Young Serif', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+h2{
+    color: var(--primary-Nutmeg);
+    font-family: 'Young Serif', serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card{
+    max-height: 100%;
+    max-width: 520px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--neutral-White);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
+}
+table th{
+    color: var(--neutral-WengeBrown);
+    font-family: var(--Content);
+    
+    font-size: cal(var(--Content-font-size) / 1.2);
+}
+.bold-content {
+    font-weight: 700;
+    color : var(--primary-Nutmeg)
+}   
+table{
+    width: 450px;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid var(--neutral-LightGrey);
+    border-radius: 75%;
+}
+td{
+    padding :  8px ;
+}
